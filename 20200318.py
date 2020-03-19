@@ -22,4 +22,13 @@ triangle(1,2,1)
 
 
 def qwq(a,b):
-    
+    if a < b:
+        a, b = b, a
+    while b > 1:
+        if a % b == 0:
+            break
+        b = b - 1
+    return b
+
+result = qwq(6,9)
+print(result)
